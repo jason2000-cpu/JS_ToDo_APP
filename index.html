@@ -15,7 +15,15 @@
       <div class="main-content">
         <span class="full-title">List of : <span class="todo-title">Todos</span></span>
         <div class="todo-content">
-          <div class="todo-content-item">
+
+          <!-- <div class="col empty-todo">
+            <img src="undraw_empty_xct9.png" alt="empty image" style="width: 50%;">
+            <br>
+            <span style="font-family: 'Fira Sans', sans-serif; font-size: 20px; font-weight: bold;">There are no todos yet...</span>
+            <br>
+            <button id="add-new-todo-1" style="margin-right: 7%;" class="btn btn-primary btn-small">Add New Todo</button>
+           </div> -->
+          <!-- <div class="todo-content-item">
             <span class="todo-id">▪️ 238-dfn-wrf-ee5-wfg-46gfd-sef ▪️</span>
             <span class="todo-text">Lorem ipsum dolor  sit amet sit amet sit amet sit amet, ryuh adipisicing elit. Ullam quisquam.</span>
             <span class="todo-date">Created at : 12th, May 2021</span>
@@ -97,7 +105,7 @@
               <i class="far fa-trash-alt"></i>
               <i class="fas fa-check"></i>
             </div>
-          </div>
+          </div> -->
           <!-- <div class="todo-content-item"></div>
           <div class="todo-content-item"></div>
           <div class="todo-content-item"></div>
@@ -120,21 +128,30 @@
       <div class="main-content">
         <div style="display: flex; justify-content: space-between;">
           <span class="full-title">Todos : <span class="todo-title">Factory</span></span>
-          <button class="btn btn-primary btn-sm">Add Todo</button>
+          <div style="width: 30%; display: flex; align-items: center;">
+            <button id="add-new-todo" style="margin-right: 7%; width: 100%;" class="btn btn-primary btn-small">Add New Todo</button>
+          </div>
         </div>
         <div class="todo-content">
           <form>
               <br>
               <div class="col">
-                <input type="text" class="form-control" placeholder="First name">
+                <span style="font-family: 'Fira Sans', sans-serif; font-weight: bold; padding-left: 5px;">Todo id</span>
+                <input id="id-field" type="text" class="form-control" placeholder="Todo id" readonly>
               </div>
               <br>
               <div class="col">
-                <textarea class="form-control" placeholder="Add todo..." rows="4"></textarea>
+                <span style="font-family: 'Fira Sans', sans-serif; font-weight: bold; padding-left: 5px;">Todo body</span>
+                <textarea id="body-field" class="form-control" placeholder="Add todo..." rows="4"></textarea>
               </div>
               <br>
               <div class="col">
-                <input type="text" class="form-control" placeholder="Last name">
+                <span style="font-family: 'Fira Sans', sans-serif; font-weight: bold; padding-left: 5px;">Todo timestamp</span>
+                <input id="time-field" type="text" class="form-control" placeholder="Todo timestamp" readonly>
+              </div>
+              <br>
+              <div class="col">
+                <button id="create-todo" type="button" class="btn btn-primary w-100">Create Todo</button>
               </div>
           </form>
         </div>
