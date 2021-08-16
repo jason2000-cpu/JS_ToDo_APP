@@ -43,9 +43,6 @@
   height: 100%;
 }
 
-.side-content {
-
-}
 .todo-content {
   /* background-color: yellow; */
   height: calc(100% - 40px);
@@ -60,14 +57,12 @@
   margin: 10px;
   position: relative;
   border-radius: 5px;
-  box-shadow: 0px 2px 10px 1px rgba(0, 0, 255, .05);
   cursor: pointer;
   overflow: hidden;
   transition: all .3s ease;
 }
 
 .todo-content-item:hover {
-  box-shadow: 0px 0px 0px 0px;
   background-color: #f5f5f5;
 }
 .todo-content-item:hover .actions-window{
@@ -84,7 +79,7 @@
 
 .todo-text {
   position: absolute;
-  top: 30px;
+  top: 35px;
   left: 20px;
   right: 20px;
   font-family: 'Fira Sans', sans-serif;
@@ -122,7 +117,7 @@
 }
 
 .incomplete {  
-  color: rgb(84, 85, 84);
+  color: rgb(255, 85, 84);
 }
 
 .actions-window {
