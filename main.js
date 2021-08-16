@@ -105,6 +105,8 @@ const updateTodo = () => {
 	timeField.value = "";
 	bodyField.value = "";
 	displayAllTodos();
+	updateTodoButton.style.display = "none"
+	createTodoButton.style.display = "block"
 }
 
 const markTodoAsComplete = (itemId) => {
