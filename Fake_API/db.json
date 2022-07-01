@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": "fjyaey-yznq-mg0z-gfagpz",
+      "timestamp": "2022-6-27 23:36:42",
+      "body": "Kenya One",
+      "status": "Not complete"
+    },
+    {
+      "id": "m80zzp-qyi1-9b0j-ngnnbw",
+      "timestamp": "2022-6-28 7:8:33",
+      "body": "Do the axios assignment",
+      "status": "Not complete"
+    },
+    {
+      "id": "570hx1-y4hv-zas9-713geg",
+      "timestamp": "2022-6-30 22:29:1",
+      "body": "visit friend",
+      "status": "Not complete"
+    },
+    {
+      "id": "r64fyb-oyty-ty00-cr7zb2",
+      "timestamp": "2022-7-1 9:34:40",
+      "body": "Milk the cows",
+      "status": "Not complete"
+    }
+  ]
+}
