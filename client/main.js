@@ -18,10 +18,10 @@ const displayAllTodos = () => {
    axios.get("http://localhost:8000/posts").then( (response) =>{
     Todos.push(...response.data)
       console.log(Todos)
-      if (Todos.length == 0) {
+      if (Todos.length !== 0) {
               todoList.innerHTML += `
               <div class = "empty-todo">
-              <img src="undraw_empty_xct9.png" alt="empty image" style="width: 50%;">
+              <img src="./client/undraw_empty_xct9.png" alt="empty image" style="width: 50%;">
               <br>
               <span style="font-family: 'Fira Sans', sans-serif; font-size: 20px; font-weight: bold;">There are no todos yet...</span>
               <br>
@@ -46,6 +46,7 @@ const displayAllTodos = () => {
 		    };
 	}
   })
+  .catch((err)=>{console.log(err)})
 	
 }
 
