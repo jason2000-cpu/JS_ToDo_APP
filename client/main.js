@@ -18,7 +18,7 @@ const displayAllTodos = () => {
    axios.get("http://localhost:8000/posts").then( (response) =>{
     Todos.push(...response.data)
       console.log(Todos)
-      if (Todos.length !== 0) {
+      if (Todos.length == 0) {
               todoList.innerHTML += `
               <div class = "empty-todo">
               <img src="./client/undraw_empty_xct9.png" alt="empty image" style="width: 50%;">
